@@ -4,27 +4,97 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
-.navbar {
-	align-items: unset;
-	flex-direction: column;
+.icon {
+	width: 1.2rem;
 }
 
-.navbar .navbar-brand {
+.icon img {
+	width: 100%;
+}
+
+.top-bar {
 	display: flex;
+	padding: 1rem;
+	width: 100%;
 	justify-content: space-between;
 }
 
-.navbar nav {
-	width: 100%;
-	background-color: #23282d;
+.top-bar .addy {
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: space-around;
 }
 
-.navbar nav .menu ul {
+.top-bar .social {
+	display: flex;
+	width: 20%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.top-bar .contact-us {
+	display: flex;
+}
+
+#menu-navigation {
 	display: flex;
 	justify-content: space-around;
+}
+
+#site-title {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-us {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact-us .call {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-us .email {
+	display: flex;
+	flex-direction: column;
+}
+
+.ind-services {
+	display: flex;
+	align-items: center;
+}
+
+.ind-services .logo {
+	width: 5rem;
+}
+
+.ind-services .logo img {
+	width: 100%;
+}
+
+#carousel {
+	width: 50%;
+}
+
+.happy-clients .happy .testimonials article .client {
+	display: flex;
+}
+
+.happy-clients .happy .testimonials article .client .headshot {
+	width: 7rem;
+	height: 7rem;
+}
+
+.happy-clients .happy .testimonials article .client .headshot img {
+	-o-object-fit: cover;
+	   object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

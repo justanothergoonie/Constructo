@@ -3,6 +3,7 @@
 include_once "inc/cpt-service.php";
 include_once "inc/cpt-testies.php";
 include_once "inc/cpt-projects.php";
+include_once "inc/cpt_clients.php";
 
 add_action('after_setup_theme', 'blankslate_setup');
 function blankslate_setup()

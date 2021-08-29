@@ -1,4 +1,5 @@
 <?php
+const CPT_TEST = 'testimonials';
 // Register Custom Post Type
 function constructo_cpt_testies()
 {
@@ -36,7 +37,7 @@ function constructo_cpt_testies()
         'label' => __('Testimonial', 'constructo'),
         'description' => __('Testimonials from previous customers', 'constructo'),
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,
@@ -52,6 +53,6 @@ function constructo_cpt_testies()
         'capability_type' => 'page',
         'show_in_rest' => true,
     );
-    register_post_type('testies', $args);
+    register_post_type(CPT_TEST, $args);
 }
 add_action('init', 'constructo_cpt_testies', 0);

@@ -1,14 +1,14 @@
 <?php
+const CPT_CLIENT = 'clients';
 // Register Custom Post Type
-const CPT_SERVICES = 'service';
-function constructo_cpt_services()
+function constructo_cpt_clients()
 {
 
     $labels = array(
-        'name' => _x('Services', 'Post Type General Name', 'constructo'),
-        'singular_name' => _x('Service', 'Post Type Singular Name', 'constructo'),
-        'menu_name' => __('Services', 'constructo'),
-        'name_admin_bar' => __('Service', 'constructo'),
+        'name' => _x('Clients', 'Post Type General Name', 'constructo'),
+        'singular_name' => _x('Client', 'Post Type Singular Name', 'constructo'),
+        'menu_name' => __('Clients', 'constructo'),
+        'name_admin_bar' => __('Client', 'constructo'),
         'archives' => __('Item Archives', 'constructo'),
         'attributes' => __('Item Attributes', 'constructo'),
         'parent_item_colon' => __('Parent Item:', 'constructo'),
@@ -34,16 +34,16 @@ function constructo_cpt_services()
         'filter_items_list' => __('Filter items list', 'constructo'),
     );
     $args = array(
-        'label' => __('Service', 'constructo'),
-        'description' => __('Services provided by the company', 'constructo'),
+        'label' => __('Client', 'constructo'),
+        'description' => __('clients that have hired us', 'constructo'),
         'labels' => $labels,
-        'supports' => array('title', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
-        'menu_icon' => 'dashicons-hammer',
+        'menu_icon' => 'dashicons-universal-access',
         'show_in_admin_bar' => true,
         'show_in_nav_menus' => true,
         'can_export' => true,
@@ -53,6 +53,6 @@ function constructo_cpt_services()
         'capability_type' => 'page',
         'show_in_rest' => true,
     );
-    register_post_type(CPT_SERVICES, $args);
+    register_post_type(CPT_CLIENT, $args);
 }
-add_action('init', 'constructo_cpt_services', 0);
+add_action('init', 'constructo_cpt_clients', 0);

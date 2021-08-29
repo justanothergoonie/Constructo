@@ -12,6 +12,11 @@
         } else {
             echo '</h2>';
         } ?>
+        <img src="<?php $headshot = the_field('headshot'); ?>" alt="" class="head">
+
+
+
+        <p><?php the_field('quote') ?> </p>
 
         <?php if (!is_search()) {
             get_template_part('entry', 'meta');

@@ -1,5 +1,6 @@
 <?php
 // Register Custom Post Type
+const CPT_PROJECTS = 'projects';
 function constructo_cpt_projects()
 {
 
@@ -37,6 +38,7 @@ function constructo_cpt_projects()
         'description'           => __('Past projects we have worked on', 'constructo'),
         'labels'                => $labels,
         'supports'              => array('title', 'editor', 'thumbnail'),
+        'taxonomies'            => array('category'),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -52,6 +54,6 @@ function constructo_cpt_projects()
         'capability_type'       => 'page',
         'show_in_rest'          => true,
     );
-    register_post_type('projects', $args);
+    register_post_type(CPT_PROJECTS, $args);
 }
 add_action('init', 'constructo_cpt_projects', 0);

@@ -3,5 +3,11 @@ body {
 }
 a {
 	text-decoration: none;
-	color: white;
+	// color: white;
+}
+.icon {
+	width: 1.2rem;
+	img {
+		width: 100%;
+	}
 }
