@@ -19,13 +19,14 @@ a {
 	padding: 1rem;
 	width: 100%;
 	justify-content: space-between;
+	background: #ebebeb;
 }
 
 .top-bar .addy {
 	display: flex;
 	align-items: center;
 	width: 30%;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .top-bar .social {
@@ -39,7 +40,11 @@ a {
 	display: flex;
 }
 
-#menu-navigation {
+#menu {
+	margin: 2rem 0;
+}
+
+#menu #menu-navigation {
 	display: flex;
 	justify-content: space-around;
 }
@@ -47,6 +52,13 @@ a {
 #site-title {
 	display: flex;
 	justify-content: center;
+	font-size: 3rem;
+	text-decoration: none;
+	margin: 2rem;
+}
+
+#site-title a {
+	color: black;
 }
 
 .contact-us {
@@ -59,26 +71,159 @@ a {
 	flex-direction: column;
 }
 
+.contact-us .call span {
+	margin-bottom: 1rem;
+}
+
+.contact-us .call a {
+	font-weight: 900;
+}
+
 .contact-us .email {
 	display: flex;
 	flex-direction: column;
 }
 
-.ind-services {
+.contact-us .email span {
+	margin-bottom: 1rem;
+}
+
+.contact-us .email a {
+	font-weight: 900;
+	color: black;
+}
+
+.services {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
-.ind-services .logo {
+.services .serv-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services .serv-title span {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.services .serv-title h1 {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 46px;
+	margin: 0 0 60px;
+	color: #212121;
+}
+
+.services article {
+	width: 75%;
+}
+
+.services article .ind-services {
+	display: flex;
+	margin-bottom: 3rem;
+}
+
+.services article .ind-services .logo {
 	width: 5rem;
 }
 
-.ind-services .logo img {
+.services article .ind-services .logo img {
 	width: 100%;
+}
+
+.services article .ind-services .service {
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.services article .ind-services .title {
+	margin: 0 0 1rem;
+}
+
+.services article .ind-services p {
+	line-height: 26px;
+	font-size: 15px;
+}
+
+.projects .proj-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects .proj-title span {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.projects .proj-title h1 {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 46px;
+	margin: 0 0 60px;
+	color: #212121;
+}
+
+.projects .projects-care {
+	margin: 0 auto;
+}
+
+.projects .projects-care header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects .projects-care header h2 {
+	width: 75%;
 }
 
 #carousel {
 	width: 50%;
+}
+
+.happy-clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.happy-clients .happy {
+	width: 75%;
+}
+
+.happy-clients .happy h1 {
+	color: #212121;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 2rem;
+}
+
+.happy-clients .happy .testimonials {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.happy-clients .happy .testimonials article {
+	width: 100%;
+}
+
+.happy-clients .happy .testimonials article .quote {
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 2rem;
 }
 
 .happy-clients .happy .testimonials article .client {
@@ -93,8 +238,140 @@ a {
 .happy-clients .happy .testimonials article .client .headshot img {
 	-o-object-fit: cover;
 	   object-fit: cover;
+	height: 80px;
+	width: 80px;
+	max-width: 80px;
+	max-height: 80px;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+
+.happy-clients .happy .testimonials article .client .name h1 {
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 0 2px;
+	font-weight: 700;
+	display: block;
+	color: #ffb600;
+}
+
+.happy-clients .clients {
+	width: 75%;
+}
+
+.happy-clients .clients .the-happy {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	-webkit-filter: grayscale(1);
+	        filter: grayscale(1);
+	justify-content: space-between;
+}
+
+.happy-clients .clients .the-happy .client {
+	width: 30%;
+	height: 6rem;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.happy-clients .clients .the-happy .client img {
 	width: 100%;
-	height: 100%;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+
+#footer {
+	background-color: #0d0d0d;
+	display: flex;
+	flex-direction: column;
+}
+
+#footer .footer {
+	color: #999;
+	/* width: 75%; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer .footer h2 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	border-left: 5px solid #ffb600;
+	padding-left: 1rem;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+#footer .footer p {
+	margin-bottom: 1rem;
+}
+
+#footer .footer #footer-site-title {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+#footer .footer .about {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0;
+}
+
+#footer .footer .about .social {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer .footer .about a {
+	color: white;
+}
+
+#footer .footer .working {
+	width: 40%;
+	margin: 2rem 0;
+}
+
+#footer .footer .working .hours div {
+	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer #copyright {
+	background-color: #ffb600;
+	padding: 2rem;
+}
+
+.entry-services {
+	display: flex;
+	flex-direction: column;
+}
+
+.entry-services article {
+	width: 33%;
+}
+
+.entry-services article .serv-info {
+	display: flex;
+	align-items: center;
+}
+
+.entry-services article .serv-info .serv-icon {
+	width: 100%;
+}
+
+.entry-services article .serv-info .serv-icon img {
+	width: 100%;
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */

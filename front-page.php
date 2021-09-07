@@ -27,7 +27,7 @@ get_header();
 ?>
 <main id="content" role="main">
     <section class="services">
-        <div class="title">
+        <div class="serv-title">
             <span>WE ARE SPECIALISTS IN</span>
             <h1>WHAT WE DO</h1>
         </div>
@@ -43,9 +43,12 @@ get_header();
         endif; ?>
     </section>
     <section class="projects">
-        <span>WORK OF EXCELLENCE</span>
-        <h2>RECENT PROJECTS</h2>
-        <div>
+        <div class="proj-title">
+            <span>WORK OF EXCELLENCE</span>
+            <h1>RECENT PROJECTS</h1>
+        </div>
+
+        <div class="projects-care">
             <?php if ($project_q->have_posts()) :
                 while ($project_q->have_posts()) :
                     $project_q->the_post(); ?>
@@ -76,16 +79,29 @@ get_header();
             </div>
 
         </div>
+
         <div class="clients">
-            <?php if ($client_q->have_posts()) :
-                while ($client_q->have_posts()) :
-                    $client_q->the_post(); ?>
-            <?php the_post_thumbnail(); ?>
+            <h1>Happy Clients</h1>
+            <div class="the-happy">
+                <?php if ($client_q->have_posts()) :
+                    while ($client_q->have_posts()) :
+                        $client_q->the_post(); ?>
+
+                <div class="client">
+
+                    <?php the_post_thumbnail(); ?>
 
 
-            <?php endwhile;
-                wp_reset_postdata();
-            endif; ?>
+                </div>
+
+
+
+
+
+                <?php endwhile;
+                    wp_reset_postdata();
+                endif; ?>
+            </div>
         </div>
     </section>
 
@@ -102,4 +118,5 @@ get_header();
     endif; ?>
 
 </main>
+
 <?php get_footer(); ?>

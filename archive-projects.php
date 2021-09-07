@@ -13,12 +13,8 @@ get_header(); ?>
 <div class="album py-5 bg-light">
     <main class="row" id="content">
         <header class="header">
-            <h1 class="entry-title"><?php single_term_title(); ?></h1>
-            <div class="archive-meta">
-                <?php if ('' != the_archive_description()) {
-                    echo esc_html(the_archive_description());
-                } ?>
-            </div>
+            <h1 class="entry-title">PROJECTS</h1>
+
             <hr>
         </header>
 

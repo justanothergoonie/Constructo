@@ -3,7 +3,7 @@
         <div class="serv-img">
             <?php if ((has_post_thumbnail()) && (!is_search())) : ?>
             <a href="<?php the_permalink(); ?>"
-                title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
+                title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail([300, 300]); ?></a>
             <?php endif; ?>
         </div>
 

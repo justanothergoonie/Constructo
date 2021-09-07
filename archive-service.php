@@ -14,30 +14,33 @@ get_header(); ?>
     <main class="row" id="content">
         <header class="header">
             <h1 class="entry-title"><?php single_term_title(); ?></h1>
-            <div class="archive-meta">
+            <!-- <div class="archive-meta">
                 <?php if ('' != the_archive_description()) {
                     echo esc_html(the_archive_description());
                 } ?>
-            </div>
+            </div> -->
             <hr>
         </header>
         <div class="hero">
             <h2>SERVICE</h2>
         </div>
-        <?php if ($service_q->have_posts()) :
-            while ($service_q->have_posts()) :
-                $service_q->the_post(); ?>
-        <?php get_template_part('entry', 'service'); ?>
+        <div class="entry-services">
+            <?php if ($service_q->have_posts()) :
+                while ($service_q->have_posts()) :
+                    $service_q->the_post(); ?>
+            <?php get_template_part('entry', 'service'); ?>
 
 
-        <?php endwhile;
-            wp_reset_postdata();
-        endif; ?>
+            <?php endwhile;
+                wp_reset_postdata();
+            endif; ?>
+        </div>
+
 
         <?php get_template_part('nav', 'below'); ?>
 
     </main>
 </div>
 
-<?php get_sidebar(); ?>
+<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>
