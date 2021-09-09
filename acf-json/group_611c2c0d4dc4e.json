@@ -71,7 +71,7 @@
                     "name": "image_3",
                     "type": "image",
                     "instructions": "third image duh",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -207,5 +207,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1631042004
+    "modified": 1631209601
 }
