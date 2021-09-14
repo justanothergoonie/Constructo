@@ -1,5 +1,6 @@
 body {
 	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -19,7 +20,8 @@ a {
 	padding: 1rem;
 	width: 100%;
 	justify-content: space-between;
-	background: #ebebeb;
+	background-color: #ffb600;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .top-bar .addy {
@@ -38,65 +40,81 @@ a {
 
 .top-bar .contact-us {
 	display: flex;
+	justify-content: space-evenly;
+	width: 50%;
+	align-items: center;
 }
 
-#menu {
-	margin: 2rem 0;
-}
-
-#menu #menu-navigation {
+.top-bar .contact-us .call {
 	display: flex;
-	justify-content: space-around;
+	width: 30%;
 }
 
-#site-title {
+.top-bar .contact-us .call span {
+	margin-right: 1rem;
+}
+
+.top-bar .contact-us .call a {
+	font-weight: 900;
+}
+
+.top-bar .contact-us .email {
 	display: flex;
-	justify-content: center;
-	font-size: 3rem;
+	width: 60%;
+}
+
+.top-bar .contact-us .email span {
+	margin-right: 1rem;
+}
+
+.top-bar .contact-us .email a {
+	font-weight: 900;
+	color: black;
+}
+
+#branding {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	background-color: black;
+}
+
+#branding #site-title {
+	font-size: 2.6rem;
 	text-decoration: none;
 	margin: 2rem;
 }
 
-#site-title a {
-	color: black;
+#branding #site-title a {
+	color: #ffb600;
 }
 
-.contact-us {
+#branding #menu {
+	margin: 2rem 0;
 	display: flex;
-	justify-content: space-evenly;
+	align-items: center;
+	width: 63%;
+	font-size: 1.3rem;
 }
 
-.contact-us .call {
+#branding #menu .menu-navigation-container {
+	width: 100%;
+}
+
+#branding #menu .menu-navigation-container #menu-navigation {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
 }
 
-.contact-us .call span {
-	margin-bottom: 1rem;
-}
-
-.contact-us .call a {
-	font-weight: 900;
-}
-
-.contact-us .email {
-	display: flex;
-	flex-direction: column;
-}
-
-.contact-us .email span {
-	margin-bottom: 1rem;
-}
-
-.contact-us .email a {
-	font-weight: 900;
-	color: black;
+#branding #menu .menu-navigation-container #menu-navigation a {
+	color: #ffb600;
 }
 
 .services {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 10rem;
 }
 
 .services .serv-title {
@@ -142,6 +160,13 @@ a {
 	margin-left: 25px;
 	display: flex;
 	flex-direction: column;
+	color: black;
+	font-size: 1.3rem;
+}
+
+.services article .ind-services .service a {
+	color: black;
+	font-weight: 500;
 }
 
 .services article .ind-services .title {
@@ -151,6 +176,10 @@ a {
 .services article .ind-services p {
 	line-height: 26px;
 	font-size: 15px;
+}
+
+.projects {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .projects .proj-title {
@@ -181,6 +210,7 @@ a {
 
 .projects .projects-care header {
 	display: flex;
+	font-family: 'Open Sans', sans-serif;
 	flex-direction: column;
 	align-items: center;
 }
@@ -189,8 +219,13 @@ a {
 	width: 75%;
 }
 
+.project-page {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .project-page .hero {
-	padding: 10rem;
+	padding: 6rem;
+	margin-bottom: 3rem;
 	background-image: url(/wp-content/themes/Constructo/assets/img/banner1.jpeg);
 	display: flex;
 	flex-direction: column;
@@ -204,32 +239,42 @@ a {
 	text-transform: uppercase;
 	font-size: 58px;
 	font-weight: 900;
-	margin: 0 auto;
+	margin: 1rem auto;
 }
 
 .project-page .hero span {
 	margin: 0 auto;
 }
 
-#carousel {
-	width: 50%;
+.project-page .entry-projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-page .entry-projects .entry-project {
+	width: 33%;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
 }
 
 .happy-clients {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.happy-clients h1 {
+	color: #212121;
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 2rem;
 }
 
 .happy-clients .happy {
 	width: 75%;
-}
-
-.happy-clients .happy h1 {
-	color: #212121;
-	font-weight: 700;
-	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 2rem;
 }
 
 .happy-clients .happy .testimonials {
@@ -310,6 +355,7 @@ a {
 	background-color: #0d0d0d;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #footer .footer {
@@ -327,6 +373,7 @@ a {
 	padding-left: 1rem;
 	color: white;
 	margin-bottom: 1rem;
+	color: #ffb600;
 }
 
 #footer .footer p {
@@ -353,7 +400,7 @@ a {
 }
 
 #footer .footer .about a {
-	color: white;
+	color: #ffb600;
 }
 
 #footer .footer .working {
@@ -372,8 +419,13 @@ a {
 	padding: 2rem;
 }
 
+.service-page {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .service-page .hero {
-	padding: 10rem;
+	padding: 7rem;
+	margin-bottom: 3rem;
 	background-image: url(/wp-content/themes/Constructo/assets/img/banner1.jpeg);
 	display: flex;
 	flex-direction: column;
@@ -387,11 +439,11 @@ a {
 	text-transform: uppercase;
 	font-size: 58px;
 	font-weight: 900;
-	margin: 0 auto;
+	margin: 0rem auto;
 }
 
 .service-page .hero span {
-	margin: 0 auto;
+	margin: 0rem auto;
 }
 
 .service-page .entry-services {
@@ -430,6 +482,55 @@ a {
 
 .service-page .entry-services article .serv .serv-info .serv-text {
 	margin-left: 2rem;
+}
+
+.blog-page {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.blog-page .hero {
+	padding: 6rem;
+	margin-bottom: 3rem;
+	background-image: url(/wp-content/themes/Constructo/assets/img/banner1.jpeg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.blog-page .hero h2 {
+	text-transform: uppercase;
+	font-size: 58px;
+	font-weight: 900;
+	margin: 1rem auto;
+}
+
+.blog-page .hero span {
+	margin: 0 auto;
+}
+
+.blog-page article {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 1rem auto;
+}
+
+.blog-page article h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.blog-page article .entry-summary {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.blog-page article .entry-summary .blog-text {
+	margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

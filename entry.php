@@ -1,5 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
+        <h1>hello entry.php</h1>
         <?php if (is_singular()) {
             echo '<h1 class="entry-title" itemprop="headline">';
         } else {

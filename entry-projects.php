@@ -1,4 +1,4 @@
-    <header>
+    <div class="entry-project">
         <?php $carousel = get_field('header_carousel'); ?>
         <div id="carousel">
             <div class="carousel slide" data-bs-ride="carousel">
@@ -29,4 +29,4 @@
         <h2>Client: <?php echo $client->post_title ?></h2>
         <span>Architect: <?php the_field('architect') ?></span>
 
-    </header>
+    </div>

@@ -4,7 +4,13 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
+
     <?php wp_head(); ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -18,6 +24,16 @@
                     </a>
 
                     <p>9051 Constra Incorporate, USA</p>
+                </div>
+                <div class="contact-us">
+                    <div class="call">
+                        <span>Call Us</span>
+                        <a href="tel:404-784-7754">404-784-7754</a>
+                    </div>
+                    <div class="email">
+                        <span>Email Us</span>
+                        <a href="mailto:barguzman@comcast.net">barguzman@comcast.net</a>
+                    </div>
                 </div>
                 <div class="social">
                     <a href="" class="icon">
@@ -47,20 +63,11 @@
                     }
                     ?>
                 </div>
+                <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
+                </nav>
             </div>
-            <div class="contact-us">
-                <div class="call">
-                    <span>Call Us</span>
-                    <a href="tel:404-784-7754">404-784-7754</a>
-                </div>
-                <div class="email">
-                    <span>Email Us</span>
-                    <a href="mailto:barguzman@comcast.net">barguzman@comcast.net</a>
-                </div>
-            </div>
-            <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
 
-            </nav>
+
         </header>
         <div id="container">
